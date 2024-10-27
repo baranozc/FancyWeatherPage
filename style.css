@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+
+.location-search{
+    margin-top: 10px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    background-color: rgb(99, 150, 179);
+    border: 2px solid rgb(62, 95, 114);
+    border-radius: 10px;
+}
+
+body{
+    font-family: "Roboto";
+    font-size: 23px;
+    font-weight: 100;
+    background-color: rgb(119, 178, 212);
+}
+.top-row{
+    color: azure;
+    display: flex;
+    justify-content: center;
+}
+
+
+.todays-informations-container{
+    color: azure;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-left: 20px;
+    height: 500px;
+}
+.text-side{
+    align-self: baseline;
+    width:75%;
+    padding-right: 35px;
+    margin-top:25px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    border-spacing:100cm;
+    position:relative;
+    border-right: 5px solid rgb(62, 95, 114);   
+    height:100%;
+}
+
+.time-and-date{
+    display: flex;
+    justify-content: space-between;
+}
+
+#hour{
+    font-size: 50px;
+}
+#am-pm{
+    vertical-align:38%;
+    font-size: 30px;
+    margin-top: 50px;
+    padding-left: 10px;
+}
+
+.condition-based-text{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    font-size: 55px;
+}
+.symbol-side{
+    margin-left: 50px;
+    margin-right: 0px;
+    justify-content: space-around;
+}
+
+#weather-condition-symbol{
+    margin-top: 80px;
+    max-width: 70%;
+    max-height: 70%;
+    opacity: 70%;
+   
+    
+}
+.todays-text-informations{
+    text-align: center;
+    margin-right: 105px;
+}
+.weather-forecastes{
+    display: flex;
+    justify-content: space-around;
+    height: 400px   ;
+    padding-top: 50px;
+    margin-top: 50px;
+    /*background: rgb(40,40,40);
+    background: linear-gradient(180deg, rgba(40,40,40,0.7) 0%, rgba(75,75,75,1) 33%);*/
+    background: rgb(118,178,212);
+    background: linear-gradient(180deg, rgba(118,178,212,1) 0%, rgba(142,209,247,1) 22%);
+    
+}
+
+.forecasting-day{
+    padding-top: 15px;
+    font-weight: 300;
+    font-size: 20px;
+    /*
+    background-color: rgba(75, 75, 75, 0.25);
+    border: 2px solid rgb(40,40,40);
+    */
+    background-color: rgb(118,178,212,0.15);
+    border: 2px solid rgb(142,209,247);
+    border-radius: 15px;
+    width: 23%;
+    text-align: center;
+    height: 77%;
+}
+.day-forecast-title{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+/*buradan sonrası gpt icin*/
+
+#rain-effect {
+    position: fixed; /* Sabit konumda olmalı */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Mouse olaylarını engelle */
+    z-index: 0; /* İçeriğin arkasında olması için */
+}
+
+.rain {
+    opacity: 1;
+}
+
+.drop {
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.6);
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(calc(-3 * 1vw), 100vh) rotate(12deg);
+    }
+}
+
+.main-container{
+    position: relative;
+    z-index: 1;
+}
+
+
+/*gunes icin denemeler*/

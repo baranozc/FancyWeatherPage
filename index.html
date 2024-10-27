@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FancyWeatherPage</title>
+</head>
+<body>
+    <div id="rain-effect"></div> <!-- it is for rain effect-->
+    <div class="top-row"><input type="text" class="location-search" id="location-search" placeholder="Search location..." onkeypress="checkEnter(event)"></div>
+    <div class="main-container">
+        <div class="todays-informations-container">
+            <div class="text-side" id="text-side">
+                <div class="time-and-date">
+                    <span class="time"><span id="hour"></span><span id="am-pm"></span></span>
+                    <span class="date" id="date"></span>
+                </div>
+                <div class="condition-based-text" id="condition-based-text">
+                    
+                </div>
+            </div>
+            
+            <div class="symbol-side">
+                
+                <img id="weather-condition-symbol" src="" alt=""><br>
+                <div class="todays-text-informations">
+                    <div id="current-degree"></div>
+                    <div class="current-humidity" id="current-humidity"></div>
+                    <div id="rand-info"></div>
+                </div>
+            </div>
+        </div>
+        <div class="weather-forecastes-container">
+        <div class="weather-forecastes" id="weather-forecastes">
+            <div class="forecasting-day" id="day1">
+                <div id="day1-daytime"></div>
+                <div id="day1-nighttime"></div>
+            </div>
+            <div class="forecasting-day" id="day2">
+                <div id="day2-daytime"></div>
+                <div id="day2-nighttime"></div>
+            </div>
+            <div class="forecasting-day" id="day3">
+                <div id="day3-daytime"></div>
+                <div id="day3-nighttime"></div>
+            </div>
+            <div class="forecasting-day" id="day4">
+                <div id="day4-daytime"></div>
+                <div id="day4-nighttime"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
